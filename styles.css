@@ -71,14 +71,14 @@ section h2 {
 }
 
 /* Estilos de Lista de Habilidades */
-ul {
+.lista-habilidades {
     list-style: none;
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
 }
 
-ul li {
+.lista-habilidades li {
     background-color: #eef4ff;
     color: #1e3c72;
     padding: 6px 12px;
@@ -89,21 +89,30 @@ ul li {
 }
 
 /* Estilos de Formación Académica */
-article {
+.formacion-academica {
     background-color: #f8fafc;
     border-left: 4px solid #2a5298;
     padding: 12px 16px;
     border-radius: 4px;
 }
 
-article h3 {
+.formacion-academica dt {
     font-size: 1rem;
     color: #2c3e50;
-    margin-bottom: 5px;
+    font-weight: 700;
+}
+
+.formacion-academica dd {
+    margin: 0 0 8px;
+}
+
+.formacion-academica dd:last-child {
+    margin-bottom: 0;
 }
 
 /* Estilos para la sección de Cursos */
-.contenedor-cursos {
+.lista-cursos {
+    list-style: none;
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
@@ -111,7 +120,7 @@ article h3 {
     margin-top: 15px;
 }
 
-.contenedor-cursos article {
+.lista-cursos li {
     background-color: #ffffff;
     border: 1px solid #e2e8f0;
     border-radius: 8px;
@@ -121,7 +130,12 @@ article h3 {
     box-shadow: 0 2px 5px rgba(0,0,0,0.05);
 }
 
-.contenedor-cursos img {
+.lista-cursos h3 {
+    font-size: 1rem;
+    color: #2c3e50;
+}
+
+.lista-cursos img {
     width: 100%;
     height: auto;
     border-radius: 6px;
